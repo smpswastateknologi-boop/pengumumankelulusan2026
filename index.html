@@ -3,14 +3,14 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pengumuman Kelulusan - SMP SWASTA TEKNOLOGI</title>
+  <title>Pengumuman Kelulusan - SMP Swasta Teknologi</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <script src="/_sdk/element_sdk.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&amp;family=Nunito:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Nunito', sans-serif; }
-    .font-heading { font-family: 'Playfair Display', serif; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
     @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(34,197,94,0.3); } 50% { box-shadow: 0 0 40px rgba(34,197,94,0.6); } }
     @keyframes confetti-fall { 0% { transform: translateY(-100%) rotate(0deg); opacity: 1; } 100% { transform: translateY(100%) rotate(720deg); opacity: 0; } }
@@ -19,102 +19,132 @@
     .animate-fade-in-delay2 { animation: fadeInUp 0.8s ease 0.6s forwards; opacity: 0; }
     .pulse-glow { animation: pulse-glow 2s infinite; }
     .confetti-piece { position: fixed; width: 10px; height: 10px; top: -10px; animation: confetti-fall linear forwards; pointer-events: none; z-index: 9999; }
-    .countdown-box { background: rgba(251,191,36,0.3); backdrop-filter: blur(10px); border: 1px solid rgba(251,191,36,0.5); }
+    .countdown-box { background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
   </style>
   <style>body { box-sizing: border-box; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
- <body class="h-full overflow-auto">
-  <div id="app" class="w-full min-h-full bg-gradient-to-br from-green-800 via-green-600 to-green-500"><!-- LANDING PAGE -->
-   <div id="page-landing" class="w-full min-h-full flex flex-col items-center justify-center px-4 py-12">
-    <div class="text-center max-w-2xl mx-auto animate-fade-in"><img src="https://iili.io/BprJ3qx.png" alt="Logo SMP Swasta Teknologi" class="w-28 h-28 mx-auto mb-6 rounded-full shadow-xl bg-white p-2" loading="lazy" onerror="this.style.background='#166534'; this.alt='Logo';">
-     <h1 class="font-heading text-3xl md:text-5xl text-white font-900 mb-3 drop-shadow-lg" id="title-school">PENGUMUMAN KELULUSAN</h1>
-     <p class="text-green-100 text-lg md:text-xl font-semibold mb-1" id="subtitle-school">SMP SWASTA TEKNOLOGI</p>
-     <p class="text-green-200 text-base mb-1" id="subtitle-year">Tahun Pelajaran 2025/2026</p>
-     <p class="text-yellow-300 text-sm font-semibold tracking-widest mb-8">PENGUMUMAN RESMI</p>
-    </div><!-- COUNTDOWN -->
-    <div class="animate-fade-in-delay text-center mb-10">
-     <p class="text-green-100 text-sm uppercase tracking-widest mb-4">Waktu Pengumuman</p>
-     <div class="flex gap-3 justify-center flex-wrap">
-      <div class="countdown-box rounded-xl px-4 py-3 min-w-[70px]">
-       <div id="cd-days" class="text-white text-2xl font-800">
-        00
-       </div>
-       <div class="text-green-200 text-xs">
-        Hari
-       </div>
+ <body class="h-full overflow-auto bg-green-800">
+  <div id="app" class="w-full min-h-full">
+   <!-- LANDING PAGE -->
+   <div id="page-landing" class="w-full min-h-full flex flex-col" style="background: linear-gradient(135deg, #166534 0%, #15803d 40%, #22c55e 100%);">
+    <!-- Header -->
+    <header class="w-full py-6 px-4 text-center">
+     <div class="animate-fade-in">
+      <img src="https://iili.io/BprJ3qx.png" alt="Logo SMP Swasta Teknologi" class="mx-auto w-24 h-24 md:w-32 md:h-32 rounded-full shadow-lg bg-white p-2" loading="lazy" onerror="console.error('Image failed:', this.src); this.style.background='#dcfce7'; this.alt='Logo';">
+     </div>
+    </header><!-- Main Content -->
+    <main class="flex-1 flex flex-col items-center justify-center px-4 py-8">
+     <div class="text-center max-w-2xl mx-auto">
+      <div class="inline-block bg-red-600 text-white px-6 py-2 rounded-full font-bold text-sm md:text-base mb-4 animate-fade-in uppercase tracking-widest shadow-lg">
+       🔴 PENGUMUMAN RESMI
       </div>
-      <div class="countdown-box rounded-xl px-4 py-3 min-w-[70px]">
-       <div id="cd-hours" class="text-white text-2xl font-800">
-        00
+      <h1 class="font-display text-3xl md:text-5xl text-white font-900 mb-3 animate-fade-in drop-shadow-lg" id="title-text">PENGUMUMAN KELULUSAN</h1>
+      <p class="text-green-100 text-lg md:text-xl mb-2 animate-fade-in-delay" id="subtitle-text">Tahun Pelajaran 2025/2026</p>
+      <p class="text-white text-xl md:text-2xl font-bold animate-fade-in-delay" id="school-text">SMP SWASTA TEKNOLOGI</p><!-- Countdown -->
+      <div class="mt-10 animate-fade-in-delay2">
+       <p class="text-green-100 text-sm uppercase tracking-widest mb-4">Hitung Mundur Pengumuman</p>
+       <div class="flex justify-center gap-3 md:gap-5">
+        <div class="countdown-box rounded-xl px-4 py-3 md:px-6 md:py-4 text-center">
+         <div id="cd-days" class="text-2xl md:text-4xl font-bold text-white">
+          00
+         </div>
+         <div class="text-green-200 text-xs mt-1">
+          HARI
+         </div>
+        </div>
+        <div class="countdown-box rounded-xl px-4 py-3 md:px-6 md:py-4 text-center">
+         <div id="cd-hours" class="text-2xl md:text-4xl font-bold text-white">
+          00
+         </div>
+         <div class="text-green-200 text-xs mt-1">
+          JAM
+         </div>
+        </div>
+        <div class="countdown-box rounded-xl px-4 py-3 md:px-6 md:py-4 text-center">
+         <div id="cd-minutes" class="text-2xl md:text-4xl font-bold text-white">
+          00
+         </div>
+         <div class="text-green-200 text-xs mt-1">
+          MENIT
+         </div>
+        </div>
+        <div class="countdown-box rounded-xl px-4 py-3 md:px-6 md:py-4 text-center">
+         <div id="cd-seconds" class="text-2xl md:text-4xl font-bold text-white">
+          00
+         </div>
+         <div class="text-green-200 text-xs mt-1">
+          DETIK
+         </div>
+        </div>
        </div>
-       <div class="text-green-200 text-xs">
-        Jam
-       </div>
-      </div>
-      <div class="countdown-box rounded-xl px-4 py-3 min-w-[70px]">
-       <div id="cd-mins" class="text-white text-2xl font-800">
-        00
-       </div>
-       <div class="text-green-200 text-xs">
-        Menit
-       </div>
-      </div>
-      <div class="countdown-box rounded-xl px-4 py-3 min-w-[70px]">
-       <div id="cd-secs" class="text-white text-2xl font-800">
-        00
-       </div>
-       <div class="text-green-200 text-xs">
-        Detik
+      </div><!-- Search Section -->
+      <div id="search-section" class="mt-12 w-full max-w-md mx-auto animate-fade-in-delay2">
+       <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
+        <h2 class="text-white font-bold text-lg mb-4"><i data-lucide="search" class="inline w-5 h-5 mr-2"></i>Cek Kelulusan Anda</h2><!-- Locked State -->
+        <div id="locked-state" class="space-y-4 hidden">
+         <div class="text-center py-6">
+          <div class="text-4xl mb-3">
+           🔒
+          </div>
+          <p class="text-white font-semibold text-sm mb-2">Menu Pengecekan Terkunci</p>
+          <p class="text-green-200 text-xs mb-4">Pengumuman kelulusan akan dibuka pada:</p>
+          <div class="bg-yellow-400/20 border border-yellow-400/50 rounded-lg px-3 py-2">
+           <p class="text-yellow-200 font-bold text-sm">2 Juni 2026</p>
+           <p class="text-yellow-200 font-bold text-sm">13:00 WITA</p>
+          </div>
+          <p class="text-green-300 text-xs mt-4">Silakan kembali pada waktu yang telah ditentukan</p>
+         </div>
+        </div><!-- Unlocked State -->
+        <form id="search-form" class="space-y-4 hidden">
+         <div>
+          <label for="input-nisn" class="block text-green-100 text-sm mb-1 text-left">NISN</label> <input type="text" id="input-nisn" placeholder="Masukkan NISN Anda" class="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-300 text-sm">
+         </div>
+         <div>
+          <label for="input-tgl" class="block text-green-100 text-sm mb-1 text-left">Tanggal Lahir</label> <input type="date" id="input-tgl" class="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-300 text-sm">
+         </div><button type="submit" class="w-full py-3 bg-yellow-400 hover:bg-yellow-300 text-green-900 font-bold rounded-lg transition-all pulse-glow text-sm uppercase tracking-wide"> <i data-lucide="check-circle" class="inline w-4 h-4 mr-1"></i> Cek Kelulusan </button>
+        </form>
+        <div id="notification" class="mt-4 hidden"></div>
        </div>
       </div>
      </div>
-    </div><!-- INPUT AREA -->
-    <div class="animate-fade-in-delay2 w-full max-w-md mx-auto bg-white/95 backdrop-blur rounded-2xl shadow-2xl p-6 md:p-8">
-     <h2 class="text-green-800 font-bold text-lg mb-4 text-center">Cek Kelulusan Anda</h2>
-     <div class="space-y-4">
-      <div><label for="input-nisn" class="block text-sm font-semibold text-gray-700 mb-1">NISN</label> <input type="text" id="input-nisn" placeholder="Masukkan NISN Anda" class="w-full px-4 py-3 border-2 border-green-200 rounded-xl focus:border-green-500 focus:outline-none transition">
-      </div>
-      <div><label for="input-tgl" class="block text-sm font-semibold text-gray-700 mb-1">Tanggal Lahir</label> <input type="date" id="input-tgl" class="w-full px-4 py-3 border-2 border-green-200 rounded-xl focus:border-green-500 focus:outline-none transition">
-      </div><button id="btn-check" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition pulse-glow flex items-center justify-center gap-2"> <i data-lucide="search" style="width:20px;height:20px;"></i> Cek Kelulusan </button>
-     </div>
-     <div id="notification" class="mt-4 hidden"></div>
-    </div><!-- FOOTER -->
-    <footer class="mt-12 text-center text-green-200 text-sm px-4 pb-6">
-     <p>© 2026 SMP SWASTA TEKNOLOGI</p>
-     <p class="mt-1">Jika mengalami kendala akses, silakan hubungi wali kelas atau panitia sekolah.</p>
+    </main><!-- Footer -->
+    <footer class="w-full py-6 px-4 text-center border-t border-white/10">
+     <p class="text-green-200 text-sm">© 2026 SMP SWASTA TEKNOLOGI</p>
+     <p class="text-green-300/70 text-xs mt-1">Jika mengalami kendala akses, silakan hubungi wali kelas atau panitia sekolah.</p>
     </footer>
    </div><!-- RESULT PAGE -->
-   <div id="page-result" class="w-full min-h-full flex flex-col items-center justify-center px-4 py-12 hidden">
-    <div id="result-content" class="w-full max-w-lg mx-auto bg-white rounded-3xl shadow-2xl p-8 text-center">
-    </div><button id="btn-back" class="mt-6 bg-white/20 hover:bg-white/30 text-white font-semibold px-6 py-3 rounded-xl transition flex items-center gap-2"> <i data-lucide="arrow-left" style="width:18px;height:18px;"></i> Kembali </button>
-    <footer class="mt-12 text-center text-green-200 text-sm px-4 pb-6">
-     <p>© 2026 SMP SWASTA TEKNOLOGI</p>
-     <p class="mt-1">Jika mengalami kendala akses, silakan hubungi wali kelas atau panitia sekolah.</p>
+   <div id="page-result" class="w-full min-h-full hidden flex-col" style="background: linear-gradient(135deg, #166534 0%, #15803d 40%, #22c55e 100%);">
+    <div class="flex-1 flex items-center justify-center px-4 py-12">
+     <div id="result-card" class="bg-white rounded-3xl shadow-2xl max-w-lg w-full p-8 md:p-10 text-center">
+      <!-- Filled dynamically -->
+     </div>
+    </div>
+    <footer class="w-full py-6 px-4 text-center border-t border-white/10">
+     <p class="text-green-200 text-sm">© 2026 SMP SWASTA TEKNOLOGI</p>
+     <p class="text-green-300/70 text-xs mt-1">Jika mengalami kendala akses, silakan hubungi wali kelas atau panitia sekolah.</p>
     </footer>
    </div>
   </div>
   <script>
-    // Config & SDK
+    // Config
     const defaultConfig = {
       school_name: 'SMP SWASTA TEKNOLOGI',
       graduation_year: '2025/2026',
-      background_color: '#16a34a',
+      background_color: '#166534',
       surface_color: '#ffffff',
-      text_color: '#166534',
-      primary_action_color: '#16a34a',
-      secondary_action_color: '#15803d',
-      font_family: 'Nunito',
-      font_size: 16
+      text_color: '#1f2937',
+      primary_action_color: '#facc15',
+      secondary_action_color: '#22c55e'
     };
 
     window.elementSdk.init({
       defaultConfig,
       onConfigChange: async (config) => {
-        document.getElementById('subtitle-school').textContent = config.school_name || defaultConfig.school_name;
-        document.getElementById('subtitle-year').textContent = 'Tahun Pelajaran ' + (config.graduation_year || defaultConfig.graduation_year);
-        const font = config.font_family || defaultConfig.font_family;
-        document.body.style.fontFamily = `${font}, Nunito, sans-serif`;
+        const school = config.school_name || defaultConfig.school_name;
+        const year = config.graduation_year || defaultConfig.graduation_year;
+        document.getElementById('school-text').textContent = school;
+        document.getElementById('subtitle-text').textContent = `Tahun Pelajaran ${year}`;
       },
       mapToCapabilities: (config) => ({
         recolorables: [
@@ -125,8 +155,8 @@
           { get: () => config.secondary_action_color || defaultConfig.secondary_action_color, set: (v) => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } }
         ],
         borderables: [],
-        fontEditable: { get: () => config.font_family || defaultConfig.font_family, set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); } },
-        fontSizeable: { get: () => config.font_size || defaultConfig.font_size, set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); } }
+        fontEditable: undefined,
+        fontSizeable: undefined
       }),
       mapToEditPanelValues: (config) => new Map([
         ['school_name', config.school_name || defaultConfig.school_name],
@@ -134,167 +164,108 @@
       ])
     });
 
-    // CSV Data
-    let studentsData = [];
-    const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSXQdPIBXeGrzrVyc2WsLH5rSzWaTZd7jrhiCPLE_yMHAfqEzyQgz0jYC_RKu62HQ/pub?gid=1789323003&single=true&output=csv';
-
-    async function loadCSV() {
-      try {
-        const res = await fetch(CSV_URL);
-        const text = await res.text();
-        const rows = text.split('\n').map(r => {
-          const cols = [];
-          let current = '';
-          let inQuotes = false;
-          for (let i = 0; i < r.length; i++) {
-            if (r[i] === '"') { inQuotes = !inQuotes; }
-            else if (r[i] === ',' && !inQuotes) { cols.push(current.trim()); current = ''; }
-            else { current += r[i]; }
-          }
-          cols.push(current.trim());
-          return cols;
-        });
-        // Skip header row
-        for (let i = 1; i < rows.length; i++) {
-          const r = rows[i];
-          if (r.length >= 7 && r[0]) {
-            studentsData.push({
-              nama: r[0],       // A
-              nis: r[1],        // B
-              jk: r[2],         // C
-              nisn: r[3],       // D
-              tgl_lahir: r[4],  // E
-              ortu: r[5],       // F
-              status: r[6]      // G
-            });
-          }
-        }
-      } catch (e) {
-        console.error('Failed to load CSV', e);
-      }
-    }
-    loadCSV();
-
-    // Countdown - set target date (June 2, 2026 13:00 WITA / UTC+8)
-    const targetDate = new Date('2026-06-02T13:00:00+08:00');
-    let isAnnouncementOpen = false;
-
+    // Countdown & Access Control
+    const announcementStart = new Date('2026-06-02T13:00:00+08:00'); // 2 Juni 2026, 13:00 WITA
+    const targetDate = new Date('2026-06-02T13:00:00+08:00'); // Sama dengan waktu pengumuman
+    
     function updateCountdown() {
       const now = new Date();
       const diff = targetDate - now;
-      
       if (diff <= 0) {
         document.getElementById('cd-days').textContent = '00';
         document.getElementById('cd-hours').textContent = '00';
-        document.getElementById('cd-mins').textContent = '00';
-        document.getElementById('cd-secs').textContent = '00';
-        
-        // Unlock the check button and change UI
-        if (!isAnnouncementOpen) {
-          isAnnouncementOpen = true;
-          unlockAnnouncement();
-        }
+        document.getElementById('cd-minutes').textContent = '00';
+        document.getElementById('cd-seconds').textContent = '00';
         return;
       }
-      
       const d = Math.floor(diff / 86400000);
       const h = Math.floor((diff % 86400000) / 3600000);
       const m = Math.floor((diff % 3600000) / 60000);
       const s = Math.floor((diff % 60000) / 1000);
       document.getElementById('cd-days').textContent = String(d).padStart(2, '0');
       document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
-      document.getElementById('cd-mins').textContent = String(m).padStart(2, '0');
-      document.getElementById('cd-secs').textContent = String(s).padStart(2, '0');
+      document.getElementById('cd-minutes').textContent = String(m).padStart(2, '0');
+      document.getElementById('cd-seconds').textContent = String(s).padStart(2, '0');
     }
-
-    function unlockAnnouncement() {
-      // Enable button
-      document.getElementById('btn-check').disabled = false;
-      document.getElementById('btn-check').classList.remove('opacity-50', 'cursor-not-allowed');
-      document.getElementById('btn-check').classList.add('cursor-pointer');
-      
-      // Update input fields
-      document.getElementById('input-nisn').disabled = false;
-      document.getElementById('input-tgl').disabled = false;
-      
-      // Show notification
-      const notif = document.getElementById('notification');
-      notif.className = 'mt-4 bg-green-50 border border-green-300 text-green-800 rounded-xl p-4 text-sm';
-      notif.innerHTML = '✅ <strong>Pengumuman Dibuka!</strong><br>Menu cek kelulusan sekarang tersedia. Silakan periksa status kelulusan Anda.';
-      notif.classList.remove('hidden');
-    }
-
-    function lockAnnouncement() {
-      // Disable button
-      document.getElementById('btn-check').disabled = true;
-      document.getElementById('btn-check').classList.add('opacity-50', 'cursor-not-allowed');
-      document.getElementById('btn-check').classList.remove('cursor-pointer');
-      
-      // Disable input fields
-      document.getElementById('input-nisn').disabled = true;
-      document.getElementById('input-tgl').disabled = true;
-      
-      // Show notification
-      const notif = document.getElementById('notification');
-      notif.className = 'mt-4 bg-blue-50 border border-blue-300 text-blue-800 rounded-xl p-4 text-sm';
-      notif.innerHTML = '🔒 <strong>Pengumuman Belum Dibuka</strong><br>Menu cek kelulusan akan otomatis terbuka pada 2 Juni 2026 pukul 13:00 WITA.';
-      notif.classList.remove('hidden');
-    }
-
-    // Initial state
-    lockAnnouncement();
     updateCountdown();
     setInterval(updateCountdown, 1000);
 
-    // Confetti
-    function launchConfetti() {
-      const colors = ['#16a34a', '#fbbf24', '#ef4444', '#3b82f6', '#a855f7', '#ec4899'];
-      for (let i = 0; i < 80; i++) {
-        const el = document.createElement('div');
-        el.className = 'confetti-piece';
-        el.style.left = Math.random() * 100 + '%';
-        el.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        el.style.animationDuration = (2 + Math.random() * 3) + 's';
-        el.style.animationDelay = Math.random() * 2 + 's';
-        el.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
-        el.style.width = (6 + Math.random() * 8) + 'px';
-        el.style.height = (6 + Math.random() * 8) + 'px';
-        document.body.appendChild(el);
-        setTimeout(() => el.remove(), 5000);
+    // Check access status
+    function checkAccessStatus() {
+      const now = new Date();
+      const isOpen = now >= announcementStart;
+      const lockedState = document.getElementById('locked-state');
+      const searchForm = document.getElementById('search-form');
+      
+      if (isOpen) {
+        lockedState.classList.add('hidden');
+        searchForm.classList.remove('hidden');
+      } else {
+        lockedState.classList.remove('hidden');
+        searchForm.classList.add('hidden');
       }
     }
+    
+    checkAccessStatus();
+    setInterval(checkAccessStatus, 1000);
 
-    // Normalize date for comparison
-    function normalizeDate(dateStr) {
-      if (!dateStr) return '';
-      // Try various formats
-      const d = new Date(dateStr);
-      if (!isNaN(d)) {
-        return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-      }
-      return dateStr.trim();
-    }
+    // CSV Data
+    let studentsData = [];
+    const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSXQdPIBXeGrzrVyc2WsLH5rSzWaTZd7jrhiCPLE_yMHAfqEzyQgz0jYC_RKu62HQ/pub?gid=1789323003&single=true&output=csv';
 
-    // Check graduation
-    document.getElementById('btn-check').addEventListener('click', function(e) {
+    fetch(csvUrl)
+      .then(r => r.text())
+      .then(csv => {
+        const rows = csv.split('\n').map(r => r.split(',').map(c => c.trim().replace(/^"|"$/g, '')));
+        // Skip header row
+        for (let i = 1; i < rows.length; i++) {
+          const row = rows[i];
+          if (row.length >= 7) {
+            studentsData.push({
+              nama: row[0],       // A
+              nis: row[1],        // B
+              jk: row[2],         // C
+              nisn: row[3],       // D
+              tgl_lahir: row[4],  // E
+              ortu: row[5],       // F
+              status: row[6]      // G
+            });
+          }
+        }
+      })
+      .catch(e => console.error('Failed to load data:', e));
+
+    // Search
+    document.getElementById('search-form').addEventListener('submit', function(e) {
       e.preventDefault();
       const nisn = document.getElementById('input-nisn').value.trim();
       const tgl = document.getElementById('input-tgl').value.trim();
       const notif = document.getElementById('notification');
 
       if (!nisn || !tgl) {
-        notif.className = 'mt-4 bg-yellow-50 border border-yellow-300 text-yellow-800 rounded-xl p-4 text-sm';
-        notif.innerHTML = '<strong>⚠️ Perhatian:</strong> Silakan isi NISN dan Tanggal Lahir Anda.';
+        notif.className = 'mt-4 p-3 rounded-lg bg-red-500/80 text-white text-sm';
+        notif.textContent = '⚠️ Harap isi NISN dan Tanggal Lahir Anda.';
         notif.classList.remove('hidden');
         return;
       }
 
-      const normalizedInput = normalizeDate(tgl);
-      const student = studentsData.find(s => s.nisn === nisn && normalizeDate(s.tgl_lahir) === normalizedInput);
+      // Format date for comparison
+      const inputDate = new Date(tgl);
+      const student = studentsData.find(s => {
+        const sNisn = s.nisn.replace(/\s/g, '');
+        const inputNisn = nisn.replace(/\s/g, '');
+        if (sNisn !== inputNisn) return false;
+        // Flexible date matching
+        const sTgl = s.tgl_lahir.replace(/\s/g, '');
+        const formattedInput1 = `${inputDate.getDate()}-${inputDate.getMonth()+1}-${inputDate.getFullYear()}`;
+        const formattedInput2 = `${String(inputDate.getDate()).padStart(2,'0')}-${String(inputDate.getMonth()+1).padStart(2,'0')}-${inputDate.getFullYear()}`;
+        const formattedInput3 = `${inputDate.getFullYear()}-${String(inputDate.getMonth()+1).padStart(2,'0')}-${String(inputDate.getDate()).padStart(2,'0')}`;
+        return sTgl === formattedInput1 || sTgl === formattedInput2 || sTgl === formattedInput3 || sTgl === tgl;
+      });
 
       if (!student) {
-        notif.className = 'mt-4 bg-red-50 border border-red-300 text-red-800 rounded-xl p-4 text-sm';
-        notif.innerHTML = '🚫 <strong>NISN tidak ditemukan.</strong><br>Silakan periksa kembali atau hubungi wali kelas.';
+        notif.className = 'mt-4 p-3 rounded-lg bg-red-500/80 text-white text-sm';
+        notif.innerHTML = '🚫 NISN tidak ditemukan.<br>Silakan periksa kembali atau hubungi wali kelas.';
         notif.classList.remove('hidden');
         return;
       }
@@ -305,51 +276,76 @@
 
     function showResult(student) {
       document.getElementById('page-landing').classList.add('hidden');
+      document.getElementById('page-landing').classList.remove('flex');
       document.getElementById('page-result').classList.remove('hidden');
-      const content = document.getElementById('result-content');
+      document.getElementById('page-result').classList.add('flex');
 
-      if (student.status && student.status.toUpperCase().includes('LULUS')) {
-        launchConfetti();
-        content.innerHTML = `
+      const card = document.getElementById('result-card');
+      const isLulus = student.status.toUpperCase().includes('LULUS');
+
+      if (isLulus) {
+        card.innerHTML = `
           <div class="animate-fade-in">
             <div class="text-6xl mb-4">🎓</div>
-            <h2 class="font-heading text-2xl md:text-3xl text-green-700 font-900 mb-2">SELAMAT!</h2>
-            <p class="text-green-600 text-lg font-bold mb-6">Anda dinyatakan <span class="bg-green-100 px-3 py-1 rounded-full text-green-800">LULUS</span></p>
-            <div class="text-left bg-green-50 rounded-xl p-5 space-y-2 text-sm">
-              <div class="flex justify-between border-b border-green-100 pb-2"><span class="font-semibold text-gray-600">NISN</span><span class="font-bold text-gray-800">${student.nisn}</span></div>
-              <div class="flex justify-between border-b border-green-100 pb-2"><span class="font-semibold text-gray-600">Nama Siswa</span><span class="font-bold text-gray-800">${student.nama}</span></div>
-              <div class="flex justify-between border-b border-green-100 pb-2"><span class="font-semibold text-gray-600">NIS</span><span class="font-bold text-gray-800">${student.nis}</span></div>
-              <div class="flex justify-between border-b border-green-100 pb-2"><span class="font-semibold text-gray-600">Tanggal Lahir</span><span class="font-bold text-gray-800">${student.tgl_lahir}</span></div>
-              <div class="flex justify-between border-b border-green-100 pb-2"><span class="font-semibold text-gray-600">Jenis Kelamin</span><span class="font-bold text-gray-800">${student.jk}</span></div>
-              <div class="flex justify-between border-b border-green-100 pb-2"><span class="font-semibold text-gray-600">Nama Orang Tua</span><span class="font-bold text-gray-800">${student.ortu}</span></div>
-              <div class="flex justify-between"><span class="font-semibold text-gray-600">Status</span><span class="font-bold text-green-700 bg-green-200 px-2 rounded">${student.status}</span></div>
+            <h2 class="font-display text-2xl md:text-3xl text-green-700 font-bold mb-2">SELAMAT!</h2>
+            <p class="text-green-600 font-semibold text-lg mb-6">Anda dinyatakan <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-bold">LULUS</span></p>
+            <div class="text-left bg-green-50 rounded-xl p-5 space-y-3 text-sm">
+              <div class="flex justify-between border-b border-green-100 pb-2"><span class="text-gray-500">NISN</span><span class="font-semibold text-gray-800">${student.nisn}</span></div>
+              <div class="flex justify-between border-b border-green-100 pb-2"><span class="text-gray-500">Nama Siswa</span><span class="font-semibold text-gray-800">${student.nama}</span></div>
+              <div class="flex justify-between border-b border-green-100 pb-2"><span class="text-gray-500">NIS</span><span class="font-semibold text-gray-800">${student.nis}</span></div>
+              <div class="flex justify-between border-b border-green-100 pb-2"><span class="text-gray-500">Tanggal Lahir</span><span class="font-semibold text-gray-800">${student.tgl_lahir}</span></div>
+              <div class="flex justify-between border-b border-green-100 pb-2"><span class="text-gray-500">Jenis Kelamin</span><span class="font-semibold text-gray-800">${student.jk}</span></div>
+              <div class="flex justify-between border-b border-green-100 pb-2"><span class="text-gray-500">Nama Orang Tua</span><span class="font-semibold text-gray-800">${student.ortu}</span></div>
+              <div class="flex justify-between"><span class="text-gray-500">Status</span><span class="font-bold text-green-700">✅ LULUS</span></div>
             </div>
-            <div class="mt-6 bg-green-50 border-l-4 border-green-500 p-4 rounded-r-xl text-left">
-              <p class="text-green-800 text-sm italic">"Lulus SMP bukanlah akhir, tapi gerbang menuju petualangan yang lebih seru. Ilmu yang kau bawa dari SMP akan jadi bekal penting untuk masa depanmu. Jangan berhenti di sini, kamu punya potensi besar untuk terus berkembang."</p>
+            <div class="mt-6 p-4 bg-yellow-50 rounded-xl border border-yellow-200">
+              <p class="text-gray-700 text-sm italic leading-relaxed">"Lulus SMP bukanlah akhir, tapi gerbang menuju petualangan yang lebih seru. Ilmu yang kau bawa dari SMP akan jadi bekal penting untuk masa depanmu. Jangan berhenti di sini, kamu punya potensi besar untuk terus berkembang."</p>
             </div>
+            <button onclick="goBack()" class="mt-6 px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg text-sm font-semibold transition-all">← Kembali</button>
           </div>
         `;
+        launchConfetti();
       } else {
-        content.innerHTML = `
+        card.innerHTML = `
           <div class="animate-fade-in">
-            <div class="text-5xl mb-4">📋</div>
-            <h2 class="font-heading text-2xl text-gray-700 font-bold mb-4">Hasil Pengumuman</h2>
-            <div class="text-left bg-gray-50 rounded-xl p-5 space-y-2 text-sm">
-              <div class="flex justify-between border-b border-gray-100 pb-2"><span class="font-semibold text-gray-600">NISN</span><span class="font-bold">${student.nisn}</span></div>
-              <div class="flex justify-between border-b border-gray-100 pb-2"><span class="font-semibold text-gray-600">Nama</span><span class="font-bold">${student.nama}</span></div>
-              <div class="flex justify-between"><span class="font-semibold text-gray-600">Status</span><span class="font-bold text-orange-600">${student.status}</span></div>
+            <div class="text-6xl mb-4">📋</div>
+            <h2 class="font-display text-2xl text-gray-700 font-bold mb-2">Hasil Pengecekan</h2>
+            <div class="text-left bg-gray-50 rounded-xl p-5 space-y-3 text-sm mt-4">
+              <div class="flex justify-between border-b border-gray-100 pb-2"><span class="text-gray-500">NISN</span><span class="font-semibold text-gray-800">${student.nisn}</span></div>
+              <div class="flex justify-between border-b border-gray-100 pb-2"><span class="text-gray-500">Nama Siswa</span><span class="font-semibold text-gray-800">${student.nama}</span></div>
+              <div class="flex justify-between"><span class="text-gray-500">Status</span><span class="font-bold text-red-600">${student.status}</span></div>
             </div>
+            <button onclick="goBack()" class="mt-6 px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg text-sm font-semibold transition-all">← Kembali</button>
           </div>
         `;
       }
     }
 
-    document.getElementById('btn-back').addEventListener('click', function() {
+    function goBack() {
       document.getElementById('page-result').classList.add('hidden');
+      document.getElementById('page-result').classList.remove('flex');
       document.getElementById('page-landing').classList.remove('hidden');
-    });
+      document.getElementById('page-landing').classList.add('flex');
+    }
+
+    function launchConfetti() {
+      const colors = ['#22c55e', '#facc15', '#ef4444', '#3b82f6', '#a855f7', '#f97316'];
+      for (let i = 0; i < 80; i++) {
+        const piece = document.createElement('div');
+        piece.className = 'confetti-piece';
+        piece.style.left = Math.random() * 100 + '%';
+        piece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
+        piece.style.width = (Math.random() * 8 + 6) + 'px';
+        piece.style.height = (Math.random() * 8 + 6) + 'px';
+        piece.style.animationDuration = (Math.random() * 2 + 2) + 's';
+        piece.style.animationDelay = (Math.random() * 2) + 's';
+        document.body.appendChild(piece);
+        setTimeout(() => piece.remove(), 5000);
+      }
+    }
 
     lucide.createIcons();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a008b5fc7be7fde8',t:'MTc3OTU4ODA2OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a009052cff4da28e',t:'MTc3OTU5MTMxMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
